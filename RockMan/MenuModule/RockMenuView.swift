@@ -1,7 +1,7 @@
 import SwiftUI
 
-struct MenuView: View {
-    @StateObject var menuModel =  MenuViewModel()
+struct RockMenuView: View {
+    @StateObject var menuModel =  RockMenuViewModel()
     @State var showSettings = false
     
     func goToSettings() {
@@ -16,7 +16,7 @@ struct MenuView: View {
                     .ignoresSafeArea()
                 
                 if showSettings {
-                    SettingsView(showSettings: $showSettings)
+                    RockSettingsView(showSettings: $showSettings)
                         .zIndex(1)
                 }
                 
@@ -61,6 +61,6 @@ struct MenuView: View {
 }
 
 #Preview {
-    MenuView()
+    RockMenuView()
 }
 

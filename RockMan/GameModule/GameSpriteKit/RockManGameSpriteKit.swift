@@ -1,8 +1,8 @@
 import SwiftUI
 import SpriteKit
 
-class GameSpriteKit: SKScene, SKPhysicsContactDelegate {
-    var game: GameData?
+class RockManGameSpriteKit: SKScene, SKPhysicsContactDelegate {
+    var game: RockManGameData?
     var itemTimer: Timer!
     var positionTimer: Timer!
     var firstItem: FlyingItem!

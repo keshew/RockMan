@@ -68,7 +68,7 @@ struct DifficultyView: View {
                 Spacer()
             }
             .navigationDestination(isPresented: $difficultyModel.isMenuAvailible) {
-                MenuView()
+                RockMenuView()
             }
             
             .navigationDestination(isPresented: $difficultyModel.isEasyAvailible) {

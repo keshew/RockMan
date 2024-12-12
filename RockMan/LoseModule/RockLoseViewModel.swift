@@ -1,7 +1,7 @@
 import SwiftUI
 
-class LoseViewModel: ObservableObject {
-    let contact = LoseModel()
+class RockLoseViewModel: ObservableObject {
+    let contact = RockLoseModel()
     @Published var isMenuAvailible = false
     @Published var isRetryAvailible = false
     @Published var isKeepAvailible = false

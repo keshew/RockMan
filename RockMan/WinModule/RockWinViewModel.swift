@@ -1,17 +1,17 @@
 import SwiftUI
 
-class WinViewModel: ObservableObject {
-    let contact = WinModel()
+class RockWinViewModel: ObservableObject {
+    let contact = RockWinModel()
     @Published var isMenuAvailible = false
     @Published var isNextAvailible = false
 
     func goToMenu() {
-        UserDefaultsManager().completeLevel()
+        RockUserDefaultsManager().completeLevel()
         isMenuAvailible = true
     }
     
     func goToNext() {
-        UserDefaultsManager().completeLevel()
+        RockUserDefaultsManager().completeLevel()
         isNextAvailible = true
     }
 }

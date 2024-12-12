@@ -1,7 +1,7 @@
 import SwiftUI
 
-struct SettingsView: View {
-    @StateObject var settingsModel =  SettingsViewModel()
+struct RockSettingsView: View {
+    @StateObject var settingsModel =  RockSettingsViewModel()
     @Binding var showSettings: Bool
     
     func goToSettings() {

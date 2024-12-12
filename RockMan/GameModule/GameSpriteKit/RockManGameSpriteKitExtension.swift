@@ -1,7 +1,7 @@
 import SpriteKit
 import SwiftUI
 
-extension GameSpriteKit {
+extension RockManGameSpriteKit {
     func startTimer() {
         let waitAction = SKAction.wait(forDuration: 1.0)
         let updateAction = SKAction.run { [weak self] in
@@ -183,7 +183,6 @@ extension GameSpriteKit {
     func changeImage(item: FlyingItem, tapTexture: String, button: SKSpriteNode, idealImage: String, avverageImage: String, badImage: String) {
         let buttonTexture = String(describing: button.texture!)
         if tapTexture == buttonTexture {
-            
             if item.position.y > size.height / 2.6 {
                 button.texture = SKTexture(imageNamed: badImage)
                 checkForBrokeItem(item: item)

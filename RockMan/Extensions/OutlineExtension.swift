@@ -2,11 +2,11 @@ import SwiftUI
 
 extension View {
     func outlineText(color: Color, width: CGFloat) -> some View {
-        modifier(StrokeModifier(strokeSize: width, strokeColor: color))
+        modifier(RockStrokeModifier(strokeSize: width, strokeColor: color))
     }
 }
 
-struct StrokeModifier: ViewModifier {
+struct RockStrokeModifier: ViewModifier {
     private let id = UUID()
     var strokeSize: CGFloat = 1
     var strokeColor: Color = .blue

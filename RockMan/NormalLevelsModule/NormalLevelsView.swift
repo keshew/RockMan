@@ -129,11 +129,11 @@ struct NormalLevelsView: View {
             }
             
             .navigationDestination(isPresented: $normalLevelsModel.isGameAvailible) {
-                GameView()
+                RockGameView()
             }
             
             .navigationDestination(isPresented: $normalLevelsModel.isMenuAvailible) {
-                MenuView()
+                RockMenuView()
             }
         }
         .navigationBarBackButtonHidden(true)

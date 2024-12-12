@@ -1,6 +1,6 @@
 import Foundation
 
-class GameData: ObservableObject {
+class RockManGameData: ObservableObject {
     @Published var isLose = false
     @Published var isWin = false
     @Published var isMenu = false

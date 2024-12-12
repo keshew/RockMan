@@ -4,9 +4,9 @@ import SwiftUI
 struct RockManApp: App {
     var body: some Scene {
         WindowGroup {
-            MenuView()
+            RockMenuView()
                 .onAppear {
-                    UserDefaultsManager().firstLaunch()
+                    RockUserDefaultsManager().firstLaunch()
                 }
         }
     }

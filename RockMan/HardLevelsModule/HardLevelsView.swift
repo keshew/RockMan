@@ -128,11 +128,11 @@ struct HardLevelsView: View {
                 }
             }
             .navigationDestination(isPresented: $hardLevelsModel.isMenuAvailible) {
-                MenuView()
+                RockMenuView()
             }
             
             .navigationDestination(isPresented: $hardLevelsModel.isGameAvailible) {
-                GameView()
+                RockGameView()
             }
         }
         .navigationBarBackButtonHidden(true)

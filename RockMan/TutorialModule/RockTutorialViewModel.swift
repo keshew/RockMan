@@ -1,7 +1,7 @@
 import SwiftUI
 
-class TutorialViewModel: ObservableObject {
-    let contact = TutorialModel()
+class RockTutorialViewModel: ObservableObject {
+    let contact = RockTutorialModel()
     @Published var isMenuAvailible = false
     @Published var currentIndex = 0
     @Published var isLinkVisible = false

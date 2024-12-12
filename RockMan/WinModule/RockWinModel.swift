@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct GameModel {
+struct RockWinModel {
  
 }
 

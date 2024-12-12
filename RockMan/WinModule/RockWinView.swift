@@ -1,7 +1,7 @@
 import SwiftUI
 
-struct WinView: View {
-    @StateObject var winModel =  WinViewModel()
+struct RockWinView: View {
+    @StateObject var winModel =  RockWinViewModel()
 
     var body: some View {
         ZStack {
@@ -58,7 +58,7 @@ struct WinView: View {
                            offsetY: 8)
             }
             .navigationDestination(isPresented: $winModel.isMenuAvailible) {
-                MenuView()
+                RockMenuView()
             }
             
             .navigationDestination(isPresented: $winModel.isNextAvailible) {
@@ -70,6 +70,6 @@ struct WinView: View {
 }
 
 #Preview {
-    WinView()
+    RockWinView()
 }
 

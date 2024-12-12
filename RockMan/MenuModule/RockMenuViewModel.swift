@@ -1,7 +1,7 @@
 import SwiftUI
 
-class MenuViewModel: ObservableObject {
-    let contact = MenuModel()
+class RockMenuViewModel: ObservableObject {
+    let contact = RockMenuModel()
     @Published var isLevelDifvailible = false
   
     

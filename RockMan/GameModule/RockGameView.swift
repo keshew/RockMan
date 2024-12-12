@@ -1,9 +1,9 @@
 import SwiftUI
 import SpriteKit
 
-struct GameView: View {
-    @StateObject var gameModel =  GameViewModel()
-    @StateObject private var gameData = GameData()
+struct RockGameView: View {
+    @StateObject var gameModel =  RockGameViewModel()
+    @StateObject private var gameData = RockManGameData()
     
     var body: some View {
             SpriteView(scene: gameModel.createGameScene(gameData: gameData))
@@ -11,16 +11,16 @@ struct GameView: View {
                 .navigationBarBackButtonHidden(true)
         
                 .navigationDestination(isPresented: $gameData.isWin) {
-                    WinView()
+                    RockWinView()
                 }
         
                 .navigationDestination(isPresented: $gameData.isLose) {
-                    LoseView()
+                    RockLoseView()
                 }
     }
 }
 
 #Preview {
-    GameView()
+    RockGameView()
 }
 

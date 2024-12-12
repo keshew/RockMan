@@ -134,11 +134,11 @@ struct EasyLevelsView: View {
                 }
             }
             .navigationDestination(isPresented: $easyLevelsModel.isGameAvailible) {
-                GameView()
+                RockGameView()
             }
             
             .navigationDestination(isPresented: $easyLevelsModel.isMenuAvailible) {
-                MenuView()
+                RockMenuView()
             }
         }
         .navigationBarBackButtonHidden(true)

@@ -1,7 +1,7 @@
 import SwiftUI
 
-class SettingsViewModel: ObservableObject {
-    let contact = SettingsModel()
+class RockSettingsViewModel: ObservableObject {
+    let contact = RockSettingsModel()
     @Published var isMenuAvailible = false
   
     

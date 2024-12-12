@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct TutorialModel {
+struct RockTutorialModel {
     var sizeArray: [CGFloat] = [22, 18, 22, 24, 15, 22]
     var textArray = ["Hello there, adventurer! Welcome to the game! Let me guide you through the rules and help you become a master of this rhythm-filled journey.",
                      "The Journey Ahead Here’s how it works: You’ve got a map filled with levels. At first, only one level is unlocked, but every time you complete a level, a new one opens up. Your goal? Collect all the coins scattered across the levels and reach the finish line. Doesn’t matter what order you tackle the levels—just make sure no coin is left behind before you hit that finish flag!",

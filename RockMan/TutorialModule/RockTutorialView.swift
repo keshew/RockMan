@@ -1,7 +1,7 @@
 import SwiftUI
 
-struct TutorialView: View {
-    @StateObject var tutorialModel =  TutorialViewModel()
+struct RockTutorialView: View {
+    @StateObject var tutorialModel =  RockTutorialViewModel()
 
     var body: some View {
         NavigationView {
@@ -70,7 +70,7 @@ struct TutorialView: View {
                         .Jomhuria(size: 54, color: .white)
                    }
                 if tutorialModel.isLinkVisible {
-                    NavigationLink(destination: GameView()) {
+                    NavigationLink(destination: RockGameView()) {
                         Text("perehod")
                             .frame(maxWidth: UIScreen.main.bounds.width, maxHeight: UIScreen.main.bounds.height)
                             .foregroundColor(.clear)
@@ -82,6 +82,6 @@ struct TutorialView: View {
 }
 
 #Preview {
-    TutorialView()
+    RockTutorialView()
 }
 

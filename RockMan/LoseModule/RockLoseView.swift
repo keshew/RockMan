@@ -1,7 +1,7 @@
 import SwiftUI
 
-struct LoseView: View {
-    @StateObject var loseModel =  LoseViewModel()
+struct RockLoseView: View {
+    @StateObject var loseModel =  RockLoseViewModel()
 
     
     var body: some View {
@@ -94,7 +94,7 @@ struct LoseView: View {
                 Spacer()
             }
             .navigationDestination(isPresented: $loseModel.isMenuAvailible) {
-                MenuView()
+                RockMenuView()
             }
         }
         .navigationBarBackButtonHidden(true)
@@ -102,6 +102,6 @@ struct LoseView: View {
 }
 
 #Preview {
-    LoseView()
+    RockLoseView()
 }
 

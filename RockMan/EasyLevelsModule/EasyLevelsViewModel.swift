@@ -15,7 +15,7 @@ class EasyLevelsViewModel: ObservableObject {
     
     func imageFor(number: Int) -> String {
         var imageString = ""
-        let currentLevel = UserDefaultsManager.defaults.object(forKey: Keys.level.rawValue) as? Int ?? 0
+        let currentLevel = RockUserDefaultsManager.defaults.object(forKey: Keys.level.rawValue) as? Int ?? 0
         if currentLevel == number {
             imageString = ImageName.rockManOnLevel.rawValue
         } else if currentLevel > number {
