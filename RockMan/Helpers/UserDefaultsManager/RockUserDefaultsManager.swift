@@ -14,13 +14,13 @@ class RockUserDefaultsManager {
         }
     }
     
-    func firstLaunch() {
+    func firstRockLaunch() {
         if RockUserDefaultsManager.defaults.string(forKey: Keys.level.rawValue) == nil {
             RockUserDefaultsManager.defaults.set(1, forKey: Keys.level.rawValue)
         }
     }
     
-    func completeLevel() {
+    func completeRockLevel() {
         let currentFirst = RockUserDefaultsManager.defaults.object(forKey: Keys.level.rawValue) as? Int ?? 0
         if currentFirst < 25 {
             RockUserDefaultsManager.defaults.set(currentFirst + 1, forKey: Keys.level.rawValue)

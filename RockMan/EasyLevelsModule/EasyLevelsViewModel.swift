@@ -5,23 +5,23 @@ class EasyLevelsViewModel: ObservableObject {
     @Published var isMenuAvailible = false
     @Published var isGameAvailible = false
 
-    func goToGame() {
+    func goToRockGame() {
         isGameAvailible = true
     }
     
-    func goToMenu() {
+    func goToRockMenu() {
         isMenuAvailible = true
     }
     
-    func imageFor(number: Int) -> String {
+    func imagesFor(number: Int) -> String {
         var imageString = ""
         let currentLevel = RockUserDefaultsManager.defaults.object(forKey: Keys.level.rawValue) as? Int ?? 0
         if currentLevel == number {
-            imageString = ImageName.rockManOnLevel.rawValue
+            imageString = RockImageName.rockManOnLevel.rawValue
         } else if currentLevel > number {
-            imageString = ImageName.emptyPin.rawValue
+            imageString = RockImageName.emptyPin.rawValue
         } else if currentLevel < number {
-            imageString = ImageName.lockedPin.rawValue
+            imageString = RockImageName.lockedPin.rawValue
         }
         return imageString
     }

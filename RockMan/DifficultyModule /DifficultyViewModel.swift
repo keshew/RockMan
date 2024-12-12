@@ -7,7 +7,7 @@ class DifficultyViewModel: ObservableObject {
     @Published var isNormalAvailible = false
     @Published var isHardAvailible = false
 
-    func goToMenu() {
+    func goToRockMenu() {
         isMenuAvailible = true
     }
     

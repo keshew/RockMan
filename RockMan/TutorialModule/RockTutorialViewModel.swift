@@ -6,7 +6,7 @@ class RockTutorialViewModel: ObservableObject {
     @Published var currentIndex = 0
     @Published var isLinkVisible = false
     
-    func goToMenu() {
+    func goToRockMenu() {
         isMenuAvailible = true
     }
     

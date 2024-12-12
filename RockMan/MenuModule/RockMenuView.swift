@@ -4,14 +4,14 @@ struct RockMenuView: View {
     @StateObject var menuModel =  RockMenuViewModel()
     @State var showSettings = false
     
-    func goToSettings() {
+    func goToRockSettings() {
         showSettings.toggle()
     }
     
     var body: some View {
         NavigationStack {
             ZStack {
-                Image(ImageName.menuBackground.rawValue)
+                Image(RockImageName.menuBackground.rawValue)
                     .resizable()
                     .ignoresSafeArea()
                 
@@ -23,8 +23,8 @@ struct RockMenuView: View {
                 VStack {
                     HStack {
                         Spacer()
-                        SmallButton(foregroundImage: ImageName.gear.rawValue,
-                                    action: goToSettings)
+                        SmallButton(foregroundImage: RockImageName.gear.rawValue,
+                                    action: goToRockSettings)
                     }
                     .padding()
                     
@@ -40,7 +40,7 @@ struct RockMenuView: View {
                         
                         Spacer()
                         
-                        Image(ImageName.rockMan.rawValue)
+                        Image(RockImageName.rockMan.rawValue)
                             .resizable()
                             .frame(minWidth: 150, maxWidth: 200, minHeight: 300, maxHeight: 360)
                         Spacer()

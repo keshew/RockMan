@@ -1,4 +1,4 @@
-public enum ImageName: String {
+public enum RockImageName: String {
     case rockMan = "rockMan"
     case menuBackground = "menuBackground"
     case smallButtonBackground = "smallButtonBackground"

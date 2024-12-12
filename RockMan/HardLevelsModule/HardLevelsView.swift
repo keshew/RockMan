@@ -5,17 +5,17 @@ struct HardLevelsView: View {
 
     var body: some View {
         ZStack {
-            Image(ImageName.hardBackground.rawValue)
+            Image(RockImageName.hardBackground.rawValue)
                 .resizable()
                 .ignoresSafeArea()
             
             VStack {
                 HStack {
-                    SmallButton(foregroundImage: ImageName.menu.rawValue,
-                                action: hardLevelsModel.goToMenu)
+                    SmallButton(foregroundImage: RockImageName.menu.rawValue,
+                                action: hardLevelsModel.goToRockMenu)
                     Spacer()
                     ZStack {
-                        Image(ImageName.buttonBackground.rawValue)
+                        Image(RockImageName.buttonBackground.rawValue)
                             .resizable()
                             .frame(width: 120, height: 50)
                         HStack {
@@ -23,7 +23,7 @@ struct HardLevelsView: View {
                                 .Jomhuria(size: 35, color: .white)
                                 .offset(y: 3)
                             
-                            Image(ImageName.money.rawValue)
+                            Image(RockImageName.money.rawValue)
                                 .resizable()
                             .frame(width: 24, height: 24)
                         }
@@ -43,88 +43,88 @@ struct HardLevelsView: View {
                 }
                 
                 ZStack {
-                    Image(ImageName.hardLevelsBackground.rawValue)
+                    Image(RockImageName.hardLevelsBackground.rawValue)
                         .resizable()
                         .padding()
                         .aspectRatio(contentMode: .fit)
                     
-                    LevelPin(image: ImageName.finishPin.rawValue,
+                    LevelPin(image: RockImageName.finishPin.rawValue,
                              text: "",
                              offsetX: UIScreen.main.bounds.width / -3.1,
                              offsetY: UIScreen.main.bounds.height / -5.5,
-                             action: hardLevelsModel.goToGame)
+                             action: hardLevelsModel.goToRockGame)
                     
-                    LevelPin(image: ImageName.moneyPin.rawValue,
+                    LevelPin(image: RockImageName.moneyPin.rawValue,
                              text: "",
                              offsetX: UIScreen.main.bounds.width / -2.7,
                              offsetY: UIScreen.main.bounds.height / 7.9,
-                             action: hardLevelsModel.goToGame)
+                             action: hardLevelsModel.goToRockGame)
                     
-                    LevelPin(image: ImageName.moneyPin.rawValue,
+                    LevelPin(image: RockImageName.moneyPin.rawValue,
                              text: "",
                              offsetX: UIScreen.main.bounds.width / -20.4,
                              offsetY: UIScreen.main.bounds.height / 16,
-                             action: hardLevelsModel.goToGame)
+                             action: hardLevelsModel.goToRockGame)
 
-                    LevelPin(image: ImageName.moneyPin.rawValue,
+                    LevelPin(image: RockImageName.moneyPin.rawValue,
                              text: "",
                              offsetX: UIScreen.main.bounds.width / -8,
                              offsetY: UIScreen.main.bounds.height / -16.7,
-                             action: hardLevelsModel.goToGame)
+                             action: hardLevelsModel.goToRockGame)
                     
-                    LevelPin(image: ImageName.moneyPin.rawValue,
+                    LevelPin(image: RockImageName.moneyPin.rawValue,
                              text: "",
                              offsetX: UIScreen.main.bounds.width / 3.2,
                              offsetY: UIScreen.main.bounds.height / 6.7,
-                             action: hardLevelsModel.goToGame)
+                             action: hardLevelsModel.goToRockGame)
                     
-                    LevelPin(image: hardLevelsModel.imageFor(number: 19),
+                    LevelPin(image: hardLevelsModel.imagesFor(number: 19),
                              text: "19",
                              offsetX: UIScreen.main.bounds.width / 2.9,
                              offsetY: UIScreen.main.bounds.height / -4.7,
-                             action: hardLevelsModel.goToGame)
+                             action: hardLevelsModel.goToRockGame)
                     
-                    LevelPin(image: hardLevelsModel.imageFor(number: 18),
+                    LevelPin(image: hardLevelsModel.imagesFor(number: 18),
                              text: "18",
                              offsetX: UIScreen.main.bounds.width / 3.9,
                              offsetY: UIScreen.main.bounds.height / 5.6,
-                             action: hardLevelsModel.goToGame)
+                             action: hardLevelsModel.goToRockGame)
                     
-                    LevelPin(image: hardLevelsModel.imageFor(number: 17),
+                    LevelPin(image: hardLevelsModel.imagesFor(number: 17),
                              text: "17",
                              offsetX: UIScreen.main.bounds.width / 24.45,
                              offsetY: UIScreen.main.bounds.height / 4.8,
-                             action: hardLevelsModel.goToGame)
+                             action: hardLevelsModel.goToRockGame)
                     
-                    LevelPin(image: hardLevelsModel.imageFor(number: 22),
+                    LevelPin(image: hardLevelsModel.imagesFor(number: 22),
                              text: "22",
                              offsetX: UIScreen.main.bounds.width / 5.0,
                              offsetY: UIScreen.main.bounds.height / 9.8,
-                             action: hardLevelsModel.goToGame)
+                             action: hardLevelsModel.goToRockGame)
                     
-                    LevelPin(image: hardLevelsModel.imageFor(number: 24),
+                    LevelPin(image: hardLevelsModel.imagesFor(number: 24),
                              text: "24",
                              offsetX: UIScreen.main.bounds.width / -4.25,
                              offsetY: UIScreen.main.bounds.height / -9,
-                             action: hardLevelsModel.goToGame)
+                             action: hardLevelsModel.goToRockGame)
                     
-                    LevelPin(image: hardLevelsModel.imageFor(number: 21),
+                    LevelPin(image: hardLevelsModel.imagesFor(number: 21),
                              text: "21",
                              offsetX: UIScreen.main.bounds.width / 3.55,
                              offsetY: UIScreen.main.bounds.height / -18.5,
-                             action: hardLevelsModel.goToGame)
+                             action: hardLevelsModel.goToRockGame)
                     
-                    LevelPin(image: hardLevelsModel.imageFor(number: 23),
+                    LevelPin(image: hardLevelsModel.imagesFor(number: 23),
                              text: "23",
                              offsetX: UIScreen.main.bounds.width / 23.25,
                              offsetY: UIScreen.main.bounds.height / -9.5,
-                             action: hardLevelsModel.goToGame)
+                             action: hardLevelsModel.goToRockGame)
                     
-                    LevelPin(image: hardLevelsModel.imageFor(number: 20),
+                    LevelPin(image: hardLevelsModel.imagesFor(number: 20),
                              text: "20",
                              offsetX: UIScreen.main.bounds.width / -32,
                              offsetY: UIScreen.main.bounds.height / -5.4,
-                             action: hardLevelsModel.goToGame)
+                             action: hardLevelsModel.goToRockGame)
                 }
             }
             .navigationDestination(isPresented: $hardLevelsModel.isMenuAvailible) {

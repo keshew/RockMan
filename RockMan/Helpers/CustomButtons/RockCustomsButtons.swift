@@ -8,7 +8,7 @@ struct SmallButton: View {
             action()
         }) {
             ZStack {
-                Image(ImageName.smallButtonBackground.rawValue)
+                Image(RockImageName.smallButtonBackground.rawValue)
                     .resizable()
                     .frame(width: 60, height: 50)
                 
@@ -32,7 +32,7 @@ struct WideButton: View {
             action()
         }) {
             ZStack {
-                Image(ImageName.buttonBackground.rawValue)
+                Image(RockImageName.buttonBackground.rawValue)
                     .resizable()
                     .frame(minWidth: sizeWButton, maxWidth: sizeWButton, minHeight: sizeHButton - 20, maxHeight: sizeHButton)
                 
@@ -86,14 +86,14 @@ struct LevelPin: View {
                 Image(image)
                     .resizable()
                     .frame(width: 30, height: 30)
-                if image == ImageName.emptyPin.rawValue {
+                if image == RockImageName.emptyPin.rawValue {
                     Text(text)
                         .Jomhuria(size: 28, color: .white)
                         .offset(x: -0.5, y: 2)
                 }
             }
         }
-        .disabled(image != ImageName.lockedPin.rawValue ? false : true)
+        .disabled(image != RockImageName.lockedPin.rawValue ? false : true)
         .offset(x: offsetX, y: offsetY)
     }
 }

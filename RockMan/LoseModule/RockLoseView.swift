@@ -3,20 +3,18 @@ import SwiftUI
 struct RockLoseView: View {
     @StateObject var loseModel =  RockLoseViewModel()
 
-    
     var body: some View {
         ZStack {
             Color.black.opacity(0.5)
                 .ignoresSafeArea()
           
-            
             VStack {
                 HStack {
-                    SmallButton(foregroundImage: ImageName.menu.rawValue,
-                                action: loseModel.goToMenu)
+                    SmallButton(foregroundImage: RockImageName.menu.rawValue,
+                                action: loseModel.goToRockMenu)
                     Spacer()
                     ZStack {
-                        Image(ImageName.buttonBackground.rawValue)
+                        Image(RockImageName.buttonBackground.rawValue)
                             .resizable()
                             .frame(width: 120, height: 50)
                         HStack {
@@ -24,7 +22,7 @@ struct RockLoseView: View {
                                 .Jomhuria(size: 35, color: .white)
                                 .offset(y: 3)
                             
-                            Image(ImageName.money.rawValue)
+                            Image(RockImageName.money.rawValue)
                                 .resizable()
                             .frame(width: 24, height: 24)
                         }
@@ -49,7 +47,7 @@ struct RockLoseView: View {
                 
                 
                 ZStack {
-                    Image(ImageName.buttonBackground.rawValue)
+                    Image(RockImageName.buttonBackground.rawValue)
                         .resizable()
                         .frame(width: 130, height: 65)
                     HStack {
@@ -57,7 +55,7 @@ struct RockLoseView: View {
                             .Jomhuria(size: 45, color: .white)
                             .offset(y: 3)
                         
-                        Image(ImageName.money.rawValue)
+                        Image(RockImageName.money.rawValue)
                             .resizable()
                         .frame(width: 25, height: 25)
                     }
@@ -69,7 +67,7 @@ struct RockLoseView: View {
                     Button(action: {
                         
                     }) {
-                        Image(ImageName.playButton.rawValue)
+                        Image(RockImageName.playButton.rawValue)
                             .resizable()
                             .frame(width: 100, height: 100)
                     }
@@ -77,7 +75,7 @@ struct RockLoseView: View {
                         Button(action: {
                             
                         }) {
-                            Image(ImageName.menuButton.rawValue)
+                            Image(RockImageName.menuButton.rawValue)
                                 .resizable()
                                 .frame(width: 100, height: 100)
                         }
@@ -85,7 +83,7 @@ struct RockLoseView: View {
                         Button(action: {
                             
                         }) {
-                            Image(ImageName.retryButton.rawValue)
+                            Image(RockImageName.retryButton.rawValue)
                                 .resizable()
                                 .frame(width: 100, height: 100)
                         }

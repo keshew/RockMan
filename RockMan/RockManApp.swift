@@ -6,7 +6,7 @@ struct RockManApp: App {
         WindowGroup {
             RockMenuView()
                 .onAppear {
-                    RockUserDefaultsManager().firstLaunch()
+                    RockUserDefaultsManager().firstRockLaunch()
                 }
         }
     }

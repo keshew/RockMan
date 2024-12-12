@@ -6,7 +6,7 @@ class RockLoseViewModel: ObservableObject {
     @Published var isRetryAvailible = false
     @Published var isKeepAvailible = false
 
-    func goToMenu() {
+    func goToRockMenu() {
         isMenuAvailible = true
     }
     

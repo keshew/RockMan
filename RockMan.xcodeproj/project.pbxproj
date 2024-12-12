@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		86229C142CFF84DD0094D88D /* Jomhuria-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 86229C132CFF84B30094D88D /* Jomhuria-Regular.ttf */; };
-		86229C162CFF87330094D88D /* CustomsButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86229C152CFF87330094D88D /* CustomsButtons.swift */; };
+		86229C162CFF87330094D88D /* RockCustomsButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86229C152CFF87330094D88D /* RockCustomsButtons.swift */; };
 		86229C1B2CFF88EA0094D88D /* DifficultyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86229C182CFF88EA0094D88D /* DifficultyView.swift */; };
 		86229C1C2CFF88EA0094D88D /* DifficultyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86229C192CFF88EA0094D88D /* DifficultyModel.swift */; };
 		86229C1D2CFF88EA0094D88D /* DifficultyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86229C1A2CFF88EA0094D88D /* DifficultyViewModel.swift */; };
@@ -49,14 +49,14 @@
 		86E227EC2CFF7F5700EFCD81 /* RockMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E227E92CFF7F5700EFCD81 /* RockMenuView.swift */; };
 		86E227ED2CFF7F5700EFCD81 /* RockMenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E227EA2CFF7F5700EFCD81 /* RockMenuModel.swift */; };
 		86E227EE2CFF7F5700EFCD81 /* RockMenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E227EB2CFF7F5700EFCD81 /* RockMenuViewModel.swift */; };
-		86E227F02CFF7F6400EFCD81 /* ImageName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E227EF2CFF7F6400EFCD81 /* ImageName.swift */; };
+		86E227F02CFF7F6400EFCD81 /* RockImageName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E227EF2CFF7F6400EFCD81 /* RockImageName.swift */; };
 		86E227F42CFF805300EFCD81 /* TextExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E227F32CFF805300EFCD81 /* TextExtension.swift */; };
 		86E227FA2CFF813200EFCD81 /* JollyJack-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 86E227F22CFF804600EFCD81 /* JollyJack-Regular.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		86229C132CFF84B30094D88D /* Jomhuria-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jomhuria-Regular.ttf"; sourceTree = "<group>"; };
-		86229C152CFF87330094D88D /* CustomsButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomsButtons.swift; sourceTree = "<group>"; };
+		86229C152CFF87330094D88D /* RockCustomsButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RockCustomsButtons.swift; sourceTree = "<group>"; };
 		86229C182CFF88EA0094D88D /* DifficultyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifficultyView.swift; sourceTree = "<group>"; };
 		86229C192CFF88EA0094D88D /* DifficultyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifficultyModel.swift; sourceTree = "<group>"; };
 		86229C1A2CFF88EA0094D88D /* DifficultyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifficultyViewModel.swift; sourceTree = "<group>"; };
@@ -98,7 +98,7 @@
 		86E227E92CFF7F5700EFCD81 /* RockMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RockMenuView.swift; sourceTree = "<group>"; };
 		86E227EA2CFF7F5700EFCD81 /* RockMenuModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RockMenuModel.swift; sourceTree = "<group>"; };
 		86E227EB2CFF7F5700EFCD81 /* RockMenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RockMenuViewModel.swift; sourceTree = "<group>"; };
-		86E227EF2CFF7F6400EFCD81 /* ImageName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageName.swift; sourceTree = "<group>"; };
+		86E227EF2CFF7F6400EFCD81 /* RockImageName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RockImageName.swift; sourceTree = "<group>"; };
 		86E227F22CFF804600EFCD81 /* JollyJack-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JollyJack-Regular.otf"; sourceTree = "<group>"; };
 		86E227F32CFF805300EFCD81 /* TextExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextExtension.swift; sourceTree = "<group>"; };
 		86E227F52CFF807B00EFCD81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -128,7 +128,7 @@
 		86229C202CFF90CC0094D88D /* CustomButtons */ = {
 			isa = PBXGroup;
 			children = (
-				86229C152CFF87330094D88D /* CustomsButtons.swift */,
+				86229C152CFF87330094D88D /* RockCustomsButtons.swift */,
 			);
 			path = CustomButtons;
 			sourceTree = "<group>";
@@ -314,7 +314,7 @@
 		86E227F82CFF810200EFCD81 /* ImageName */ = {
 			isa = PBXGroup;
 			children = (
-				86E227EF2CFF7F6400EFCD81 /* ImageName.swift */,
+				86E227EF2CFF7F6400EFCD81 /* RockImageName.swift */,
 			);
 			path = ImageName;
 			sourceTree = "<group>";
@@ -430,12 +430,12 @@
 				867489402D0099E600589189 /* RockSettingsViewModel.swift in Sources */,
 				86BC60FB2D01ACCF0028A528 /* OutlineExtension.swift in Sources */,
 				86229C1D2CFF88EA0094D88D /* DifficultyViewModel.swift in Sources */,
-				86E227F02CFF7F6400EFCD81 /* ImageName.swift in Sources */,
+				86E227F02CFF7F6400EFCD81 /* RockImageName.swift in Sources */,
 				86E227EC2CFF7F5700EFCD81 /* RockMenuView.swift in Sources */,
 				86AB28892D0224AA0059AC07 /* RockManGameSpriteKit.swift in Sources */,
 				86E227ED2CFF7F5700EFCD81 /* RockMenuModel.swift in Sources */,
 				86E227F42CFF805300EFCD81 /* TextExtension.swift in Sources */,
-				86229C162CFF87330094D88D /* CustomsButtons.swift in Sources */,
+				86229C162CFF87330094D88D /* RockCustomsButtons.swift in Sources */,
 				86E227EE2CFF7F5700EFCD81 /* RockMenuViewModel.swift in Sources */,
 				86229C252CFF957A0094D88D /* EasyLevelsView.swift in Sources */,
 				86229C262CFF957A0094D88D /* EasyLevelsModel.swift in Sources */,

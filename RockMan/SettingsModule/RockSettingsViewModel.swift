@@ -5,7 +5,7 @@ class RockSettingsViewModel: ObservableObject {
     @Published var isMenuAvailible = false
   
     
-    func goToMenu() {
+    func goToRockMenu() {
         isMenuAvailible = true
     }
 }

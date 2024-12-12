@@ -6,7 +6,7 @@ struct RockTutorialView: View {
     var body: some View {
         NavigationView {
             ZStack {
-                Image(ImageName.gameBackground.rawValue)
+                Image(RockImageName.gameBackground.rawValue)
                     .resizable()
                     .ignoresSafeArea()
                 
@@ -30,11 +30,11 @@ struct RockTutorialView: View {
                 
                 VStack {
                     HStack {
-                        SmallButton(foregroundImage: ImageName.menu.rawValue,
-                                    action: tutorialModel.goToMenu)
+                        SmallButton(foregroundImage: RockImageName.menu.rawValue,
+                                    action: tutorialModel.goToRockMenu)
                         Spacer()
                         ZStack {
-                            Image(ImageName.buttonBackground.rawValue)
+                            Image(RockImageName.buttonBackground.rawValue)
                                 .resizable()
                                 .frame(width: 120, height: 50)
                             HStack {
@@ -42,7 +42,7 @@ struct RockTutorialView: View {
                                     .Jomhuria(size: 35, color: .white)
                                     .offset(y: 3)
                                 
-                                Image(ImageName.money.rawValue)
+                                Image(RockImageName.money.rawValue)
                                     .resizable()
                                     .frame(width: 24, height: 24)
                             }
@@ -51,7 +51,7 @@ struct RockTutorialView: View {
                     .padding()
                     
                     ZStack {
-                        Image(ImageName.cloud.rawValue)
+                        Image(RockImageName.cloud.rawValue)
                             .resizable()
                             .frame(width: 325, height: 300)
                         
@@ -62,7 +62,7 @@ struct RockTutorialView: View {
                             .multilineTextAlignment(.center)
                     }
                     
-                    Image(ImageName.rockMan.rawValue)
+                    Image(RockImageName.rockMan.rawValue)
                         .resizable()
                         .frame(width: 230   , height: 300)
                     

@@ -4,7 +4,7 @@ struct RockSettingsView: View {
     @StateObject var settingsModel =  RockSettingsViewModel()
     @Binding var showSettings: Bool
     
-    func goToSettings() {
+    func goToRockSettings() {
         showSettings = false
     }
     
@@ -15,7 +15,7 @@ struct RockSettingsView: View {
         
             VStack {
                 ZStack {
-                    Image(ImageName.settingsBackground.rawValue)
+                    Image(RockImageName.settingsBackground.rawValue)
                         .resizable()
                         .frame(width: 300, height: 300)
                     
@@ -28,14 +28,14 @@ struct RockSettingsView: View {
                         .Jelly(size: 30, color: Color(#colorLiteral(red: 152/255, green: 12/255, blue: 14/255, alpha: 1)))
                         .offset(y: -30)
                     
-                    Image(ImageName.lineSettings.rawValue)
+                    Image(RockImageName.lineSettings.rawValue)
                         .resizable()
                         .frame(width: 160, height: 5)
                     
                     Button(action: {
                         
                     }) {
-                        Image(ImageName.linePin.rawValue)
+                        Image(RockImageName.linePin.rawValue)
                             .resizable()
                             .frame(width: 20, height: 30)
                     }
@@ -44,7 +44,7 @@ struct RockSettingsView: View {
                         .Jelly(size: 30, color: Color(#colorLiteral(red: 152/255, green: 12/255, blue: 14/255, alpha: 1)))
                         .offset(y: 40)
                     
-                    Image(ImageName.lineSettings.rawValue)
+                    Image(RockImageName.lineSettings.rawValue)
                         .resizable()
                         .frame(width: 160, height: 5)
                         .offset(y: 70)
@@ -52,16 +52,16 @@ struct RockSettingsView: View {
                     Button(action: {
                         
                     }) {
-                        Image(ImageName.linePin.rawValue)
+                        Image(RockImageName.linePin.rawValue)
                             .resizable()
                             .frame(width: 20, height: 30)
                     }
                     .offset(y: 70)
                     
                     Button(action: {
-                        goToSettings()
+                        goToRockSettings()
                     }) {
-                        Image(ImageName.cancelButton.rawValue)
+                        Image(RockImageName.cancelButton.rawValue)
                             .resizable()
                             .frame(width: 60, height: 60)
                             

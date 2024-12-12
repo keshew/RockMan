@@ -17,11 +17,11 @@ struct RockStrokeModifier: ViewModifier {
             .background (Rectangle()
                 .foregroundStyle(strokeColor)
                 .mask({
-                    outline(context: content)
+                    outlineRock(context: content)
                 })
             )}
     
-    func outline(context:Content) -> some View {
+    func outlineRock(context:Content) -> some View {
         Canvas { context, size in
             context.addFilter(.alphaThreshold(min: 0.01))
             context.drawLayer { layer in

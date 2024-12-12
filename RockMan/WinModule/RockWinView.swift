@@ -8,22 +8,22 @@ struct RockWinView: View {
             Color.black.opacity(0.5)
                 .ignoresSafeArea()
             
-            Image(ImageName.congratulation.rawValue)
+            Image(RockImageName.congratulation.rawValue)
                 .resizable()
                 .ignoresSafeArea()
             
-            Image(ImageName.congratulation.rawValue)
+            Image(RockImageName.congratulation.rawValue)
                 .resizable()
                 .ignoresSafeArea()
                 .offset(y: 460)
             
             VStack {
                 HStack {
-                    SmallButton(foregroundImage: ImageName.menu.rawValue,
-                                action: winModel.goToMenu)
+                    SmallButton(foregroundImage: RockImageName.menu.rawValue,
+                                action: winModel.goToRockMenu)
                     Spacer()
                     ZStack {
-                        Image(ImageName.buttonBackground.rawValue)
+                        Image(RockImageName.buttonBackground.rawValue)
                             .resizable()
                             .frame(width: 120, height: 50)
                         HStack {
@@ -31,7 +31,7 @@ struct RockWinView: View {
                                 .Jomhuria(size: 35, color: .white)
                                 .offset(y: 3)
                             
-                            Image(ImageName.money.rawValue)
+                            Image(RockImageName.money.rawValue)
                                 .resizable()
                             .frame(width: 24, height: 24)
                         }
@@ -46,7 +46,7 @@ struct RockWinView: View {
                 Text("Congratulations!")
                     .Jomhuria(size: 50, color: .white)
                 
-                Image(ImageName.cup.rawValue)
+                Image(RockImageName.cup.rawValue)
                     .resizable()
                     .frame(minWidth: 300, maxWidth: 300, minHeight: 300, maxHeight: 350)
                 

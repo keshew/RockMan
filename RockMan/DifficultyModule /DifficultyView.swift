@@ -5,17 +5,17 @@ struct DifficultyView: View {
 
     var body: some View {
         ZStack {
-            Image(ImageName.menuBackground.rawValue)
+            Image(RockImageName.menuBackground.rawValue)
                 .resizable()
                 .ignoresSafeArea()
             
             VStack {
                 HStack {
-                    SmallButton(foregroundImage: ImageName.menu.rawValue,
-                                action: difficultyModel.goToMenu)
+                    SmallButton(foregroundImage: RockImageName.menu.rawValue,
+                                action: difficultyModel.goToRockMenu)
                     Spacer()
                     ZStack {
-                        Image(ImageName.buttonBackground.rawValue)
+                        Image(RockImageName.buttonBackground.rawValue)
                             .resizable()
                             .frame(width: 120, height: 50)
                         HStack {
@@ -24,7 +24,7 @@ struct DifficultyView: View {
                                 .offset(y: 3)
                             
                             
-                            Image(ImageName.money.rawValue)
+                            Image(RockImageName.money.rawValue)
                                 .resizable()
                             .frame(width: 24, height: 24)
                         }
@@ -44,7 +44,7 @@ struct DifficultyView: View {
                 
                 VStack {
                     DifficultButton(text: "EASY",
-                                    image: ImageName.greenDifficulty.rawValue,
+                                    image: RockImageName.greenDifficulty.rawValue,
                                     action: difficultyModel.goToEasy,
                                     sizeWButton: 230,
                                     sizeHButton: 120,
@@ -52,14 +52,14 @@ struct DifficultyView: View {
                 
                     
                     DifficultButton(text: "NORMAL",
-                                    image: ImageName.yellowDifficulty.rawValue,
+                                    image: RockImageName.yellowDifficulty.rawValue,
                                     action: difficultyModel.goToNormal,
                                     sizeWButton: 230,
                                     sizeHButton: 120,
                                     sizeText: 40)
                     
                     DifficultButton(text: "HARD",
-                                    image: ImageName.redDifficulty.rawValue,
+                                    image: RockImageName.redDifficulty.rawValue,
                                     action: difficultyModel.goToHard,
                                     sizeWButton: 230,
                                     sizeHButton: 120,

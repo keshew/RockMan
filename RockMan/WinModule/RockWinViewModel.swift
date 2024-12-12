@@ -5,13 +5,13 @@ class RockWinViewModel: ObservableObject {
     @Published var isMenuAvailible = false
     @Published var isNextAvailible = false
 
-    func goToMenu() {
-        RockUserDefaultsManager().completeLevel()
+    func goToRockMenu() {
+        RockUserDefaultsManager().completeRockLevel()
         isMenuAvailible = true
     }
     
     func goToNext() {
-        RockUserDefaultsManager().completeLevel()
+        RockUserDefaultsManager().completeRockLevel()
         isNextAvailible = true
     }
 }
